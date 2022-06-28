@@ -7,16 +7,14 @@ class Solution
          {
              return -1;
          }
-         if(head.next==null)
-         {
-             return head.data;
-         }
+       
          Node s=head;
          Node f=head;
          while(f!=null &&f.next!=null)
          {
+               f=f.next.next;
              s=s.next;
-             f=f.next.next;
+            
          }
          return s.data;
     }
