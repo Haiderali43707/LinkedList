@@ -5,7 +5,7 @@ class Solution {
         ListNode sec=head;
         ListNode slow=head;
         ListNode fast=head;
-       for(int i=0;i<k-1;++i)
+       for(int i=0;i<k-1;i++)
        {
            fast=fast.next;
            first=fast;
